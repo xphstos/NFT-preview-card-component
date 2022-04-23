@@ -23,6 +23,10 @@ article {
   width: min(calc(100vw - 4rem), 22rem);
   box-shadow: 0 0.5rem 2rem -0.5rem adjust-color(c("off-black"), $alpha: -0.2);
 
+  > p {
+    margin-bottom: 0;
+  }
+
   > div {
     display: flex;
     align-items: center;
@@ -87,6 +91,7 @@ h1 {
   margin-block: 2rem 1.5rem;
   transition: color 0.2s ease;
   cursor: pointer;
+  color: v("white");
 
   &:hover {
     color: v("accent");
@@ -120,6 +125,7 @@ hr {
       font-size: 1rem;
 
       span {
+        color: v("white");
         transition: color 0.2s ease;
         cursor: pointer;
 
